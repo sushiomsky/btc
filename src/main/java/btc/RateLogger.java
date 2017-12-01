@@ -1,6 +1,5 @@
 package btc;
 
-import database.DatabaseManager;
 import org.knowm.xchange.Exchange;
 import org.knowm.xchange.currency.CurrencyPair;
 import org.knowm.xchange.dto.marketdata.Ticker;
@@ -8,6 +7,8 @@ import org.knowm.xchange.service.marketdata.MarketDataService;
 
 import java.io.IOException;
 import java.util.TimerTask;
+
+import database.DatabaseManager;
 
 /**
  * btc
@@ -28,6 +29,7 @@ import java.util.TimerTask;
  */
 public class RateLogger extends TimerTask {
 	private Exchange exchange;
+	private String exchangeName;
 	/**
 	 * When an object implementing interface <code>Runnable</code> is used
 	 * to create a thread, starting the thread causes the object's
@@ -44,12 +46,12 @@ public class RateLogger extends TimerTask {
 
 		// Interested in the public market data feed (no authentication)
 		MarketDataService marketDataService = exchange.getMarketDataService();
-
+		exchangeName = exchange.getDefaultExchangeSpecification().getExchangeName();
 		// Get the latest ticker data showing BTC to USD
 		try {
 			Ticker ticker = marketDataService.getTicker(CurrencyPair.BTC_USD);
 			Double[] data =  {ticker.getAsk().doubleValue(), ticker.getBid().doubleValue(), ticker.getHigh().doubleValue(), ticker.getLow().doubleValue()};
-			DatabaseManager.getInstance().logRate("bitfinex_btcusd", data);
+			DatabaseManager.getInstance().logRate(exchangeName.toLowerCase() + "_btcusd", data);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
