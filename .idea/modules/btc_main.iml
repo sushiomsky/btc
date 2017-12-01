@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="btc:main" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" external.system.module.group="suchomsky.de" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../../build/classes/main" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpclient:4.5.3" level="project" />
+    <orderEntry type="library" name="Gradle: mysql:mysql-connector-java:5.1.21" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-jdbc:3.1.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.beykery:neuroph:2.92" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-core:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-examples:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-bitfinex:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-poloniex:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpcore:4.4.6" level="project" />
+    <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-beans:3.1.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-core:3.1.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-tx:3.1.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: com.github.mmazi:rescu:2.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: commons-io:commons-io:2.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchart:xchart:3.4.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.reflections:reflections:0.9.11" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-openexchangerates:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-btce:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-bitcurex:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-bitstamp:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-bittrex:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-campbx:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-bitcoincharts:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-bitcoinde:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-btcchina:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-blockchain:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-kraken:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-bitcoinium:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-coinbase:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-gdax:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-bitcoinaverage:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-cexio:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-bter:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-anx:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-itbit:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-independentreserve:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-lakebtc:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-hitbtc:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-paymium:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-btctrade:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-cryptonit:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-okcoin:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-bleutrade:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-mercadobitcoin:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-bitbay:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-bitso:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-btc38:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-jubi:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-taurus:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-quoine:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-ripple:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-therock:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-btcmarkets:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-gatecoin:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-cryptofacilities:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-huobi:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-bitmarket:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-coinmate:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-empoex:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-vircurex:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-chbtc:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-ccex:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-livecoin:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-yobit:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-dsx:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.knowm.xchange:xchange-cryptopia:4.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-asm:3.1.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: aopalliance:aopalliance:1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-aop:3.1.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-context:3.1.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.9.1" level="project" />
+    <orderEntry type="library" name="Gradle: javax.ws.rs:javax.ws.rs-api:2.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.code.findbugs:jsr305:3.0.2" level="project" />
+    <orderEntry type="library" name="Gradle: net.iharder:base64:2.3.9" level="project" />
+    <orderEntry type="library" name="Gradle: oauth.signpost:signpost-core:1.2.1.2" level="project" />
+    <orderEntry type="library" name="Gradle: de.erichseifert.vectorgraphics2d:VectorGraphics2D:0.11" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.guava:guava:20.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.javassist:javassist:3.21.0-GA" level="project" />
+    <orderEntry type="library" name="Gradle: org.quickfixj:quickfixj-core:1.6.4" level="project" />
+    <orderEntry type="library" name="Gradle: org.quickfixj:quickfixj-messages-fix44:1.6.4" level="project" />
+    <orderEntry type="library" name="Gradle: com.auth0:java-jwt:3.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-expression:3.1.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.9.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.9.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.mina:mina-core:2.0.16" level="project" />
+    <orderEntry type="library" name="Gradle: org.bouncycastle:bcprov-jdk15on:1.55" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.25" level="project" />
+    <orderEntry type="library" name="Gradle: ch.qos.logback:logback-classic:1.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.commons:commons-lang3:3.6" level="project" />
+    <orderEntry type="library" name="Gradle: commons-codec:commons-codec:1.10" level="project" />
+    <orderEntry type="library" name="Gradle: ch.qos.logback:logback-core:1.2.3" level="project" />
+  </component>
+</module>

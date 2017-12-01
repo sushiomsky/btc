@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/btc.iml" filepath="$PROJECT_DIR$/.idea/modules/btc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/btc_main.iml" filepath="$PROJECT_DIR$/.idea/modules/btc_main.iml" group="btc" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/btc_test.iml" filepath="$PROJECT_DIR$/.idea/modules/btc_test.iml" group="btc" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.knowm.xchange:xchange-okcoin:4.3.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.knowm.xchange/xchange-okcoin/4.3.0/3b3323d67f4b179f41c9e8fe1b9ede04c365fb22/xchange-okcoin-4.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.knowm.xchange/xchange-okcoin/4.3.0/556aa85dbd5c83a8c27bf99f778206f1986fac59/xchange-okcoin-4.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.knowm.xchange:xchange-kraken:4.3.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.knowm.xchange/xchange-kraken/4.3.0/7b96d75579e7313f3baae29f32b3100ec858d9e5/xchange-kraken-4.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.knowm.xchange/xchange-kraken/4.3.0/8ddb7b9f4b8c09ecbbc94d8b4e27287bae36bb08/xchange-kraken-4.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

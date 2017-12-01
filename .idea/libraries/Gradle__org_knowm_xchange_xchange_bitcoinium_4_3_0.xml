@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.knowm.xchange:xchange-bitcoinium:4.3.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.knowm.xchange/xchange-bitcoinium/4.3.0/decd4c8a7f5bc8a6a0b606ec1ee3ca85f8615955/xchange-bitcoinium-4.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.knowm.xchange/xchange-bitcoinium/4.3.0/b39711d97c5dca61a18bfaced3fc8acc7121af76/xchange-bitcoinium-4.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

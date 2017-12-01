@@ -1,0 +1,38 @@
+group 'suchomsky.de'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+
+    //maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+   // compile 'com.github.sushiomsky:PersistentPreferences:1.0a'
+    // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.3'
+
+    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.21'
+
+    // https://mvnrepository.com/artifact/org.springframework/spring-jdbc
+    compile group: 'org.springframework', name: 'spring-jdbc', version: '3.1.0.RELEASE'
+
+    // https://mvnrepository.com/artifact/org.knowm.xchange/xchange-core
+    //compile group: 'org.knowm.xchange', name: 'xchange-core', version: '4.2.0'
+    //compile group: 'org.knowm.xchange', name: 'xchange-examples', version: '4.2.0'
+    //compile group: 'org.knowm.xchange', name: 'xchange-poloniex', version: '4.2.0'
+
+    // https://mvnrepository.com/artifact/org.beykery/neuroph
+    compile group: 'org.beykery', name: 'neuroph', version: '2.92'
+    compile "org.knowm.xchange:xchange-core:4.3.0"
+    compile "org.knowm.xchange:xchange-examples:4.3.0"
+    compile "org.knowm.xchange:xchange-bitfinex:4.3.0"
+    compile "org.knowm.xchange:xchange-poloniex:4.3.0"
+
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}

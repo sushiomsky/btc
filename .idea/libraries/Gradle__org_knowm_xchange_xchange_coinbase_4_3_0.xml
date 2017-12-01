@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.knowm.xchange:xchange-coinbase:4.3.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.knowm.xchange/xchange-coinbase/4.3.0/4ddc03d6d63bd6090f9a147ae1579aeb4170ce00/xchange-coinbase-4.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.knowm.xchange/xchange-coinbase/4.3.0/6d5984f85ebba0214f56eafcca1dc0841c610306/xchange-coinbase-4.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

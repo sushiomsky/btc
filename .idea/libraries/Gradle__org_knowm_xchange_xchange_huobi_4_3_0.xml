@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.knowm.xchange:xchange-huobi:4.3.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.knowm.xchange/xchange-huobi/4.3.0/8be02900e0add84e125cd5690a1d8fd601a41b0c/xchange-huobi-4.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.knowm.xchange/xchange-huobi/4.3.0/d0cd8fbf5fa073d2e1862ec6dabb8c9b06fd94/xchange-huobi-4.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

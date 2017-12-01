@@ -1,0 +1,8 @@
+23:40:11.362 nbook [main] DEBUG org.knowm.xchange.ExchangeFactory
+				- Creating default exchange from class name 
+23:40:11.465 nbook [main] DEBUG org.knowm.xchange.ExchangeFactory
+				- Creating default exchange from class name 
+23:40:13.196 nbook [main] DEBUG o.k.x.bitfinex.v1.BitfinexExchange
+				- ExchangeMetaData [currencyPairs={BTC/USD=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.01000000, maximumAmount=null, priceScale=2], LTC/USD=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.10000000, maximumAmount=null, priceScale=4], LTC/BTC=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.10000000, maximumAmount=null, priceScale=6], ETH/USD=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.10000000, maximumAmount=null, priceScale=4], ETH/BTC=CurrencyPairMetaData [tradingFee=null, minimumAmount=0.10000000, maximumAmount=null, priceScale=6]}, currencies={BTC=CurrencyMetaData{scale=8}}, publicRateLimits=null, privateRateLimits=null, shareRateLimits=false] 
+23:40:13.332 nbook [main] INFO  o.k.x.bitfinex.v1.BitfinexExchange
+				- Calling Remote Init... 

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.knowm.xchange:xchange-btce:4.3.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.knowm.xchange/xchange-btce/4.3.0/18f678a0d99985959c425fcdfe06da9626ed0420/xchange-btce-4.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.knowm.xchange/xchange-btce/4.3.0/a3b4ad526f0310487e5c2f1ecc29cd1cef5db707/xchange-btce-4.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.knowm.xchange:xchange-gdax:4.3.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.knowm.xchange/xchange-gdax/4.3.0/cabfcd4743ecb7f63c956d343702d2fc1eb6d4c3/xchange-gdax-4.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.knowm.xchange/xchange-gdax/4.3.0/74b86e84c2735fd69607142052ceea625554cfb9/xchange-gdax-4.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

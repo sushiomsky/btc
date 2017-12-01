@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.knowm.xchange:xchange-mercadobitcoin:4.3.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.knowm.xchange/xchange-mercadobitcoin/4.3.0/bd4a26e453b2d5095ae7a56ca28c905116352500/xchange-mercadobitcoin-4.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.knowm.xchange/xchange-mercadobitcoin/4.3.0/2a0b7775988c285668efed16f1696ecb01e4dc51/xchange-mercadobitcoin-4.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

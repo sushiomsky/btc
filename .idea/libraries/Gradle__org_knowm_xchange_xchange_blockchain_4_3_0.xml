@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.knowm.xchange:xchange-blockchain:4.3.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.knowm.xchange/xchange-blockchain/4.3.0/ad7c76aac5a0dc60c3d648edf387bc6c249751ac/xchange-blockchain-4.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.knowm.xchange/xchange-blockchain/4.3.0/5f1bec9e40e8e406a45b11b51480d58febacdedf/xchange-blockchain-4.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

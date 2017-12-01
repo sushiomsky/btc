@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.quickfixj:quickfixj-core:1.6.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.quickfixj/quickfixj-core/1.6.4/1be0bb0bad7984edc40371f5ac3bfdaaf300cedb/quickfixj-core-1.6.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.quickfixj/quickfixj-core/1.6.4/9326d6774e0fe34568e884aa604488a023382232/quickfixj-core-1.6.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
