@@ -52,7 +52,12 @@ public class DatabaseManager {
 
     public boolean createTable(String table){
     	String query = "CREATE TABLE IF NOT EXISTS `" + table + "` (`id` int(11) NOT NULL AUTO_INCREMENT,  `ask` double NOT NULL,  `bid` double NOT NULL,  `high` double NOT NULL,  `low` double NOT NULL,  `ctime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,  PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;";
-    	return true;
+	    try {
+		    connetion.executeQuery(query);
+	    } catch (SQLException e) {
+		    e.printStackTrace();
+	    }
+	    return true;
     }
 
     public boolean logRate(String table, Double[] data) {

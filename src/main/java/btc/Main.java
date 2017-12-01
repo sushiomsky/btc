@@ -2,6 +2,12 @@ package btc;
 
 import org.knowm.xchange.ExchangeFactory;
 import org.knowm.xchange.bitfinex.v1.BitfinexExchange;
+import org.knowm.xchange.btcchina.BTCChinaExchange;
+import org.knowm.xchange.btce.v3.BTCEExchange;
+import org.knowm.xchange.coinbase.CoinbaseExchange;
+import org.knowm.xchange.kraken.KrakenExchange;
+import org.knowm.xchange.okcoin.OkCoinExchange;
+import org.knowm.xchange.poloniex.PoloniexExchange;
 import org.neuroph.core.NeuralNetwork;
 import org.neuroph.core.data.DataSet;
 import org.neuroph.core.data.DataSetRow;
@@ -33,7 +39,14 @@ public class Main {
 
 		Timer timer = new Timer();
 		// Start in einer Sekunde dann Ablauf alle 60 Sekunden
+
+		timer.schedule(new RateLogger(ExchangeFactory.INSTANCE.createExchange(BTCChinaExchange.class.getName())), 1000, 60000*5);
+		timer.schedule(new RateLogger(ExchangeFactory.INSTANCE.createExchange(OkCoinExchange.class.getName())), 1000, 60000*5);
+		timer.schedule(new RateLogger(ExchangeFactory.INSTANCE.createExchange(KrakenExchange.class.getName())), 1000, 60000*5);
+		timer.schedule(new RateLogger(ExchangeFactory.INSTANCE.createExchange(BTCEExchange.class.getName())), 1000, 60000*5);
+		timer.schedule(new RateLogger(ExchangeFactory.INSTANCE.createExchange(CoinbaseExchange.class.getName())), 1000, 60000*5);
 		timer.schedule(new RateLogger(ExchangeFactory.INSTANCE.createExchange(BitfinexExchange.class.getName())), 1000, 60000*5);
+		timer.schedule(new RateLogger(ExchangeFactory.INSTANCE.createExchange(PoloniexExchange.class.getName())), 1000, 60000*5);
 
 		//LinkedList trainingData = DatabaseManager.getInstance().getTrainingData("bitfinex_btcusd");
 

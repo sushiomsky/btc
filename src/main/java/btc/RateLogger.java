@@ -6,6 +6,7 @@ import org.knowm.xchange.dto.marketdata.Ticker;
 import org.knowm.xchange.service.marketdata.MarketDataService;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.TimerTask;
 
 import database.DatabaseManager;
@@ -47,15 +48,19 @@ public class RateLogger extends TimerTask {
 		// Interested in the public market data feed (no authentication)
 		MarketDataService marketDataService = exchange.getMarketDataService();
 		exchangeName = exchange.getDefaultExchangeSpecification().getExchangeName();
-		// Get the latest ticker data showing BTC to USD
-		try {
-			Ticker ticker = marketDataService.getTicker(CurrencyPair.BTC_USD);
-			Double[] data =  {ticker.getAsk().doubleValue(), ticker.getBid().doubleValue(), ticker.getHigh().doubleValue(), ticker.getLow().doubleValue()};
-			DatabaseManager.getInstance().logRate(exchangeName.toLowerCase() + "_btcusd", data);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
 
+		List<CurrencyPair> pairs = exchange.getExchangeSymbols();
+
+		for (CurrencyPair pair: pairs) {
+			try {
+				Ticker ticker = marketDataService.getTicker(pair);
+				Double[] data = {ticker.getAsk().doubleValue(), ticker.getBid().doubleValue(), ticker.getHigh().doubleValue(), ticker.getLow().doubleValue()};
+				DatabaseManager.getInstance().createTable(exchangeName.toLowerCase() + "_" + pair.base.getCurrencyCode().toLowerCase() + pair.counter.getCurrencyCode().toLowerCase());
+				DatabaseManager.getInstance().logRate(exchangeName.toLowerCase() + pair.base.getCurrencyCode().toLowerCase() + pair.counter.getCurrencyCode().toLowerCase(), data);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
 	}
 
 	RateLogger(Exchange exchange){
