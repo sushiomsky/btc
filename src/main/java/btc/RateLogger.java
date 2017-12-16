@@ -60,8 +60,8 @@ public class RateLogger extends Thread {
 			try {
 				Ticker ticker = marketDataService.getTicker(pair);
 				Double[] data = {ticker.getAsk().doubleValue(), ticker.getBid().doubleValue(), ticker.getHigh().doubleValue(), ticker.getLow().doubleValue()};
-				DatabaseManager.getInstance().createTable(exchangeName.toLowerCase() + "_" + pair.base.getCurrencyCode().toLowerCase() + "_" + pair.counter.getCurrencyCode().toLowerCase());
-				DatabaseManager.getInstance().logRate(exchangeName.toLowerCase() + "_" + pair.base.getCurrencyCode().toLowerCase() + "_" + pair.counter.getCurrencyCode().toLowerCase(), data);
+				DatabaseManager.getInstance().createTable((exchangeName.toLowerCase() + "_" + pair.base.getCurrencyCode().toLowerCase() + "_" + pair.counter.getCurrencyCode().toLowerCase()).replace('-','_'));
+				DatabaseManager.getInstance().logRate((exchangeName.toLowerCase() + "_" + pair.base.getCurrencyCode().toLowerCase() + "_" + pair.counter.getCurrencyCode().toLowerCase()).replace('-','_') , data);
 				try {
 					sleep(5000);
 				} catch (InterruptedException e) {

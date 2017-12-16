@@ -14,6 +14,7 @@ import org.neuroph.core.data.DataSetRow;
 
 import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.Timer;
 
 /**
  * btc
@@ -49,11 +50,9 @@ public class Main {
 		exThreads.add(new Thread(new RateLogger(ExchangeFactory.INSTANCE.createExchange(CoinbaseExchange.class.getName()))));
 		exThreads.add(new Thread(new RateLogger(ExchangeFactory.INSTANCE.createExchange(PoloniexExchange.class.getName()))));
 
-		for (Thread exThread:exThreads) {
-			exThread.start();
-		}
-
-
+		Timer timer = new Timer();
+		timer.schedule(new RateLoggerTimer(exThreads), 0, 300000);
+		
 		//LinkedList trainingData = DatabaseManager.getInstance().getTrainingData("bitfinex_btcusd");
 
 
