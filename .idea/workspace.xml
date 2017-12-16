@@ -6,12 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8354903-b89d-4074-8ce9-c20aee406604" name="Default" comment="threads">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/btc/RateLoggerTimer.java" />
+    <list default="true" id="b8354903-b89d-4074-8ce9-c20aee406604" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/log/xchange-detail.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/database/BuildVars.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/btc/Main.java" afterPath="$PROJECT_DIR$/src/main/java/btc/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/btc/RateLogger.java" afterPath="$PROJECT_DIR$/src/main/java/btc/RateLogger.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/database/BuildVars.java" afterPath="$PROJECT_DIR$/src/main/java/database/BuildVars.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -1028,7 +1026,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513386164845</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="threads">
+      <created>1513407178677</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1513407178677</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
