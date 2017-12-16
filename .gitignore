@@ -30,3 +30,4 @@ Würde .idea/workspace.xml löschen
 Würde build/ löschen
 Würde src/main/resources/ löschen
 Würde src/test/ löschen
+/src/main/java/database/BuildVars.java

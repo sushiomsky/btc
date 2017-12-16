@@ -2,13 +2,18 @@ package btc;
 
 import org.knowm.xchange.ExchangeFactory;
 import org.knowm.xchange.bitfinex.v1.BitfinexExchange;
+import org.knowm.xchange.btcchina.BTCChinaExchange;
+import org.knowm.xchange.btce.v3.BTCEExchange;
+import org.knowm.xchange.coinbase.CoinbaseExchange;
 import org.knowm.xchange.kraken.KrakenExchange;
+import org.knowm.xchange.okcoin.OkCoinExchange;
+import org.knowm.xchange.poloniex.PoloniexExchange;
 import org.neuroph.core.NeuralNetwork;
 import org.neuroph.core.data.DataSet;
 import org.neuroph.core.data.DataSetRow;
 
 import java.util.Arrays;
-import java.util.Timer;
+import java.util.LinkedList;
 
 /**
  * btc
@@ -30,27 +35,27 @@ import java.util.Timer;
 
 public class Main {
 
+	public static final int PERIOD = 300000;
+
 	public static void main(String[] args) throws Exception {
 
-		Timer timer = new Timer();
-		// Start in einer Sekunde dann Ablauf alle 60 Sekunden
-		/*
-		timer.schedule(new RateLogger(ExchangeFactory.INSTANCE.createExchange(BTCChinaExchange.class.getName())), 20000, 60000*5);
-		Timer timer2 = new Timer();
-		timer2.schedule(new RateLogger(ExchangeFactory.INSTANCE.createExchange(OkCoinExchange.class.getName())), 40000, 60000*5);
-		Timer timer4 = new Timer();
-		timer4.schedule(new RateLogger(ExchangeFactory.INSTANCE.createExchange(BTCEExchange.class.getName())), 80000, 60000*5);
-		Timer timer5 = new Timer();
-		timer5.schedule(new RateLogger(ExchangeFactory.INSTANCE.createExchange(CoinbaseExchange.class.getName())), 100000, 60000*5);
-		Timer timer7 = new Timer();
-		timer7.schedule(new RateLogger(ExchangeFactory.INSTANCE.createExchange(PoloniexExchange.class.getName())), 140000, 60000*5);
-*/
-		//LinkedList trainingData = DatabaseManager.getInstance().getTrainingData("bitfinex_btcusd");
-		Timer timer6 = new Timer();
-		timer6.schedule(new RateLogger(ExchangeFactory.INSTANCE.createExchange(BitfinexExchange.class.getName())), 120000, 60000*5);
+		LinkedList<Thread> exThreads = new LinkedList();
 
-		Timer timer3 = new Timer();
-		timer3.schedule(new RateLogger(ExchangeFactory.INSTANCE.createExchange(KrakenExchange.class.getName())), 60000, 60000*5);
+		exThreads.add(new Thread(new RateLogger(ExchangeFactory.INSTANCE.createExchange(KrakenExchange.class.getName()))));
+		exThreads.add(new Thread(new RateLogger(ExchangeFactory.INSTANCE.createExchange(BitfinexExchange.class.getName()))));
+		exThreads.add(new Thread(new RateLogger(ExchangeFactory.INSTANCE.createExchange(BTCChinaExchange.class.getName()))));
+		exThreads.add(new Thread(new RateLogger(ExchangeFactory.INSTANCE.createExchange(OkCoinExchange.class.getName()))));
+		exThreads.add(new Thread(new RateLogger(ExchangeFactory.INSTANCE.createExchange(BTCEExchange.class.getName()))));
+		exThreads.add(new Thread(new RateLogger(ExchangeFactory.INSTANCE.createExchange(CoinbaseExchange.class.getName()))));
+		exThreads.add(new Thread(new RateLogger(ExchangeFactory.INSTANCE.createExchange(PoloniexExchange.class.getName()))));
+
+		for (Thread exThread:exThreads) {
+			exThread.start();
+		}
+
+
+		//LinkedList trainingData = DatabaseManager.getInstance().getTrainingData("bitfinex_btcusd");
+
 
 	}
 
@@ -59,6 +64,7 @@ public class Main {
 	 * @param nnet neural network
 	 * @param testSet data set used for testing
 	 */
+
 	public static void testNeuralNetwork(NeuralNetwork nnet, DataSet testSet) {
 
 		for(DataSetRow dataRow : testSet.getRows()) {

@@ -7,7 +7,6 @@ import org.knowm.xchange.service.marketdata.MarketDataService;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.TimerTask;
 
 import database.DatabaseManager;
 
@@ -28,9 +27,15 @@ import database.DatabaseManager;
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-public class RateLogger extends TimerTask {
+public class RateLogger extends Thread {
 	private Exchange exchange;
 	private String exchangeName;
+
+	@Override
+	public synchronized void start() {
+		super.start();
+	}
+
 	/**
 	 * When an object implementing interface <code>Runnable</code> is used
 	 * to create a thread, starting the thread causes the object's
@@ -55,8 +60,13 @@ public class RateLogger extends TimerTask {
 			try {
 				Ticker ticker = marketDataService.getTicker(pair);
 				Double[] data = {ticker.getAsk().doubleValue(), ticker.getBid().doubleValue(), ticker.getHigh().doubleValue(), ticker.getLow().doubleValue()};
-				DatabaseManager.getInstance().createTable(exchangeName.toLowerCase() + "_" + pair.base.getCurrencyCode().toLowerCase() + pair.counter.getCurrencyCode().toLowerCase());
-				DatabaseManager.getInstance().logRate(exchangeName.toLowerCase() + pair.base.getCurrencyCode().toLowerCase() + pair.counter.getCurrencyCode().toLowerCase(), data);
+				DatabaseManager.getInstance().createTable(exchangeName.toLowerCase() + "_" + pair.base.getCurrencyCode().toLowerCase() + "_" + pair.counter.getCurrencyCode().toLowerCase());
+				DatabaseManager.getInstance().logRate(exchangeName.toLowerCase() + "_" + pair.base.getCurrencyCode().toLowerCase() + "_" + pair.counter.getCurrencyCode().toLowerCase(), data);
+				try {
+					sleep(5000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
